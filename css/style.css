@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing:inherit;
+}
+ /* container */
+.container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 480px;
+}
+
+.oberlay {
+    margin-right: auto;;
+}
+
+.overlay::before {
+    position: absolute;
+    content: '';
+    display: none;
+    background-color: rgba(255, 255,255, 0.7);
+    width: 480px;
+    height: 720px;
+}
+
+
+.buttton-like {
+    width: 60px;
+    height: 60px;
+    border: solid 1px green;
+    background: transparent;
+    background-image: url(../img/icons/iconfinder_SocialMedia_Instagram-Outline_2959748.png);
+    background-position: center;
+    margin-right: 5px;
+}
+
+.buttton-like:hover,
+.buttton-like:focus {
+    background-color: red;
+    cursor: pointer;
+}
+
+.buttton-sub {
+    width: 60px;
+    height: 60px;
+    border: solid 1px green;
+    background: transparent;
+    background-image: url(../img/icons/iconfinder_SocialMedia_Instagram-Outline_2959748.png);
+    background-position: center;
+    margin-right: 5px;
+}
+
+.buttton-sub:hover,
+.buttton-sub:focus {
+    background-color: red;
+    cursor: pointer;
+}
+
+
+.buttton-three {
+    width: 60px;
+    height: 60px;
+    border: solid 1px green;
+    background: transparent;
+    background-image: url(../img/icons/iconfinder_SocialMedia_Instagram-Outline_2959748.png);
+    background-position: center;
+}
+
+.buttton-three:hover,
+.buttton-three:focus {
+    background-color: red;
+    cursor: pointer;
+}
+
+
+.overlay:hover::before {
+    display: block;
+}
+
+.buttton-last {
+    width: 190px;
+    height: 60px;
+    border: solid 1px green;
+    background: transparent;
+    background-image: url(../img/icons/iconfinder_SocialMedia_Instagram-Outline_2959748.png);
+    background-position: center;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+
+.buttton-last:hover,
+.buttton-last:focus {
+    background-color: red;
+    cursor: pointer;
+}
+
+
+.overlay {
+    position: relative;
+    width: 480px;
+}
+
+.action {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.overlay:hover .action {
+    display: flex;
+    flex-wrap: wrap;
+}
